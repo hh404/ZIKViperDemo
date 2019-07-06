@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC2C9F4022D03577006DF213 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F3F22D03577006DF213 /* AppDelegate.m */; };
+		EC2C9F4322D03578006DF213 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F4222D03578006DF213 /* ViewController.m */; };
+		EC2C9F4622D03578006DF213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2C9F4422D03578006DF213 /* Main.storyboard */; };
+		EC2C9F4822D0357A006DF213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2C9F4722D0357A006DF213 /* Assets.xcassets */; };
+		EC2C9F4B22D0357A006DF213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2C9F4922D0357A006DF213 /* LaunchScreen.storyboard */; };
+		EC2C9F4E22D0357A006DF213 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F4D22D0357A006DF213 /* main.m */; };
+		EC2C9F5822D0357A006DF213 /* ZIKViperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F5722D0357A006DF213 /* ZIKViperDemoTests.m */; };
+		EC2C9F6322D0357A006DF213 /* ZIKViperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F6222D0357A006DF213 /* ZIKViperDemoUITests.m */; };
+		EC2C9F8022D035E9006DF213 /* NSObject+ZIKTViperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F7322D035E9006DF213 /* NSObject+ZIKTViperAssembly.m */; };
+		EC2C9F8122D035E9006DF213 /* UIViewController+ZIKTViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F7422D035E9006DF213 /* UIViewController+ZIKTViperRouter.m */; };
+		EC2C9FE122D03698006DF213 /* ZIKTLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F8522D03697006DF213 /* ZIKTLoginService.m */; };
+		EC2C9FE222D03698006DF213 /* ZIKTUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F8822D03697006DF213 /* ZIKTUserModel.m */; };
+		EC2C9FE322D03698006DF213 /* ZIKTLoginViewWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F8C22D03697006DF213 /* ZIKTLoginViewWireframe.m */; };
+		EC2C9FE422D03698006DF213 /* ZIKTLoginBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F8D22D03697006DF213 /* ZIKTLoginBuilder.m */; };
+		EC2C9FE522D03698006DF213 /* ZIKTLoginViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F9122D03697006DF213 /* ZIKTLoginViewPresenter.m */; };
+		EC2C9FE622D03698006DF213 /* ZIKTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F9422D03697006DF213 /* ZIKTLoginViewController.m */; };
+		EC2C9FE722D03698006DF213 /* ZIKTLoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F9822D03697006DF213 /* ZIKTLoginInteractor.m */; };
+		EC2C9FE822D03698006DF213 /* ZIKTNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F9B22D03697006DF213 /* ZIKTNoteModel.m */; };
+		EC2C9FE922D03698006DF213 /* ZIKTNoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9F9E22D03697006DF213 /* ZIKTNoteListViewController.m */; };
+		EC2C9FEA22D03698006DF213 /* ZIKTNoteListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FA322D03697006DF213 /* ZIKTNoteListInteractor.m */; };
+		EC2C9FEB22D03698006DF213 /* ZIKTNoteListModuleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FA522D03697006DF213 /* ZIKTNoteListModuleBuilder.m */; };
+		EC2C9FEC22D03698006DF213 /* ZIKTNoteListViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FAA22D03697006DF213 /* ZIKTNoteListViewPresenter.m */; };
+		EC2C9FED22D03698006DF213 /* ZIKTNoteListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FAB22D03697006DF213 /* ZIKTNoteListWireframe.m */; };
+		EC2C9FEE22D03698006DF213 /* ZIKTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FB822D03697006DF213 /* ZIKTTextView.m */; };
+		EC2C9FEF22D03698006DF213 /* ZIKTTextWidgetViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FBB22D03697006DF213 /* ZIKTTextWidgetViewPresenter.m */; };
+		EC2C9FF022D03698006DF213 /* ZIKTTextViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FBD22D03697006DF213 /* ZIKTTextViewBuilder.m */; };
+		EC2C9FF122D03698006DF213 /* ZIKTTextWidgetInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FBE22D03697006DF213 /* ZIKTTextWidgetInteractor.m */; };
+		EC2C9FF222D03698006DF213 /* ZIKTTextViewWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FC022D03697006DF213 /* ZIKTTextViewWireframe.m */; };
+		EC2C9FF322D03698006DF213 /* ZIKTEditorViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FC222D03697006DF213 /* ZIKTEditorViewPresenter.m */; };
+		EC2C9FF422D03698006DF213 /* ZIKTEditorWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FC322D03697006DF213 /* ZIKTEditorWireframe.m */; };
+		EC2C9FF522D03698006DF213 /* ZIKTEditorBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FC522D03697006DF213 /* ZIKTEditorBuilder.m */; };
+		EC2C9FF622D03698006DF213 /* ZIKTEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FC722D03697006DF213 /* ZIKTEditorViewController.m */; };
+		EC2C9FF722D03698006DF213 /* ZIKTEditorInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FD122D03697006DF213 /* ZIKTEditorInteractor.m */; };
+		EC2C9FF822D03698006DF213 /* ZIKTNoteDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FD722D03698006DF213 /* ZIKTNoteDataManager.m */; };
+		EC2C9FF922D03698006DF213 /* ZIKTRouter+ZIKTLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FD922D03698006DF213 /* ZIKTRouter+ZIKTLogin.m */; };
+		EC2C9FFA22D03698006DF213 /* UIApplication+ZIKTViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FDA22D03698006DF213 /* UIApplication+ZIKTViperRouter.m */; };
+		EC2C9FFB22D03698006DF213 /* ZIKTRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FDB22D03698006DF213 /* ZIKTRouter.m */; };
+		EC2C9FFC22D03698006DF213 /* ZIKTRouter+ZIKTEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2C9FDF22D03698006DF213 /* ZIKTRouter+ZIKTEditor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC2C9F5422D0357A006DF213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC2C9F3322D03577006DF213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC2C9F3A22D03577006DF213;
+			remoteInfo = ZIKViperDemo;
+		};
+		EC2C9F5F22D0357A006DF213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC2C9F3322D03577006DF213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC2C9F3A22D03577006DF213;
+			remoteInfo = ZIKViperDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC2C9F3B22D03577006DF213 /* ZIKViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZIKViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2C9F3E22D03577006DF213 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC2C9F3F22D03577006DF213 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC2C9F4122D03577006DF213 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC2C9F4222D03578006DF213 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC2C9F4522D03578006DF213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC2C9F4722D0357A006DF213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC2C9F4A22D0357A006DF213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC2C9F4C22D0357A006DF213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2C9F4D22D0357A006DF213 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC2C9F5322D0357A006DF213 /* ZIKViperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZIKViperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2C9F5722D0357A006DF213 /* ZIKViperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIKViperDemoTests.m; sourceTree = "<group>"; };
+		EC2C9F5922D0357A006DF213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2C9F5E22D0357A006DF213 /* ZIKViperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZIKViperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2C9F6222D0357A006DF213 /* ZIKViperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIKViperDemoUITests.m; sourceTree = "<group>"; };
+		EC2C9F6422D0357A006DF213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2C9F7122D035E9006DF213 /* ZIKTViperWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperWireframe.h; sourceTree = "<group>"; };
+		EC2C9F7222D035E9006DF213 /* ZIKTViperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperView.h; sourceTree = "<group>"; };
+		EC2C9F7322D035E9006DF213 /* NSObject+ZIKTViperAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZIKTViperAssembly.m"; sourceTree = "<group>"; };
+		EC2C9F7422D035E9006DF213 /* UIViewController+ZIKTViperRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZIKTViperRouter.m"; sourceTree = "<group>"; };
+		EC2C9F7522D035E9006DF213 /* ZIKTViperPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperPresenter.h; sourceTree = "<group>"; };
+		EC2C9F7622D035E9006DF213 /* ZIKTViperViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperViewEventHandler.h; sourceTree = "<group>"; };
+		EC2C9F7722D035E9006DF213 /* ZIKTViperInteractorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperInteractorPrivate.h; sourceTree = "<group>"; };
+		EC2C9F7822D035E9006DF213 /* NSObject+ZIKTViperAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZIKTViperAssembly.h"; sourceTree = "<group>"; };
+		EC2C9F7922D035E9006DF213 /* ZIKTViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperRouter.h; sourceTree = "<group>"; };
+		EC2C9F7A22D035E9006DF213 /* ZIKTViperInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperInteractor.h; sourceTree = "<group>"; };
+		EC2C9F7B22D035E9006DF213 /* ZIKTViper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViper.h; sourceTree = "<group>"; };
+		EC2C9F7C22D035E9006DF213 /* ZIKTViperWireframePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperWireframePrivate.h; sourceTree = "<group>"; };
+		EC2C9F7D22D035E9006DF213 /* ZIKTViperPresenterPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperPresenterPrivate.h; sourceTree = "<group>"; };
+		EC2C9F7E22D035E9006DF213 /* UIViewController+ZIKTViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZIKTViperRouter.h"; sourceTree = "<group>"; };
+		EC2C9F7F22D035E9006DF213 /* ZIKTViperViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTViperViewPrivate.h; sourceTree = "<group>"; };
+		EC2C9F8422D03697006DF213 /* ZIKTLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginService.h; sourceTree = "<group>"; };
+		EC2C9F8522D03697006DF213 /* ZIKTLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTLoginService.m; sourceTree = "<group>"; };
+		EC2C9F8722D03697006DF213 /* ZIKTUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTUserModel.h; sourceTree = "<group>"; };
+		EC2C9F8822D03697006DF213 /* ZIKTUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTUserModel.m; sourceTree = "<group>"; };
+		EC2C9F8A22D03697006DF213 /* ZIKTLoginViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginViewDelegate.h; sourceTree = "<group>"; };
+		EC2C9F8B22D03697006DF213 /* ZIKTLoginViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginViewProtocol.h; sourceTree = "<group>"; };
+		EC2C9F8C22D03697006DF213 /* ZIKTLoginViewWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTLoginViewWireframe.m; sourceTree = "<group>"; };
+		EC2C9F8D22D03697006DF213 /* ZIKTLoginBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTLoginBuilder.m; sourceTree = "<group>"; };
+		EC2C9F8E22D03697006DF213 /* ZIKTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginViewController.h; sourceTree = "<group>"; };
+		EC2C9F8F22D03697006DF213 /* ZIKTLoginInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginInteractorInput.h; sourceTree = "<group>"; };
+		EC2C9F9022D03697006DF213 /* ZIKTLoginInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginInteractor.h; sourceTree = "<group>"; };
+		EC2C9F9122D03697006DF213 /* ZIKTLoginViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTLoginViewPresenter.m; sourceTree = "<group>"; };
+		EC2C9F9222D03697006DF213 /* ZIKTLoginViewWireframeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginViewWireframeInput.h; sourceTree = "<group>"; };
+		EC2C9F9322D03697006DF213 /* ZIKTLoginViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginViewEventHandler.h; sourceTree = "<group>"; };
+		EC2C9F9422D03697006DF213 /* ZIKTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTLoginViewController.m; sourceTree = "<group>"; };
+		EC2C9F9522D03697006DF213 /* ZIKTLoginBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginBuilder.h; sourceTree = "<group>"; };
+		EC2C9F9622D03697006DF213 /* ZIKTLoginViewWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginViewWireframe.h; sourceTree = "<group>"; };
+		EC2C9F9722D03697006DF213 /* ZIKTLoginViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTLoginViewPresenter.h; sourceTree = "<group>"; };
+		EC2C9F9822D03697006DF213 /* ZIKTLoginInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTLoginInteractor.m; sourceTree = "<group>"; };
+		EC2C9F9A22D03697006DF213 /* ZIKTNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteModel.h; sourceTree = "<group>"; };
+		EC2C9F9B22D03697006DF213 /* ZIKTNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTNoteModel.m; sourceTree = "<group>"; };
+		EC2C9F9E22D03697006DF213 /* ZIKTNoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTNoteListViewController.m; sourceTree = "<group>"; };
+		EC2C9F9F22D03697006DF213 /* ZIKTNoteListModuleBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListModuleBuilder.h; sourceTree = "<group>"; };
+		EC2C9FA022D03697006DF213 /* ZIKTNoteListInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListInteractorInput.h; sourceTree = "<group>"; };
+		EC2C9FA122D03697006DF213 /* ZIKTNoteListViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListViewProtocol.h; sourceTree = "<group>"; };
+		EC2C9FA222D03697006DF213 /* ZIKTNoteListViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListViewPresenter.h; sourceTree = "<group>"; };
+		EC2C9FA322D03697006DF213 /* ZIKTNoteListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTNoteListInteractor.m; sourceTree = "<group>"; };
+		EC2C9FA422D03697006DF213 /* ZIKTNoteListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListWireframe.h; sourceTree = "<group>"; };
+		EC2C9FA522D03697006DF213 /* ZIKTNoteListModuleBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTNoteListModuleBuilder.m; sourceTree = "<group>"; };
+		EC2C9FA622D03697006DF213 /* ZIKTNoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListViewController.h; sourceTree = "<group>"; };
+		EC2C9FA722D03697006DF213 /* ZIKTNoteListViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListViewDataSource.h; sourceTree = "<group>"; };
+		EC2C9FA822D03697006DF213 /* ZIKTNoteListWireframeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListWireframeInput.h; sourceTree = "<group>"; };
+		EC2C9FA922D03697006DF213 /* ZIKTNoteListDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListDataService.h; sourceTree = "<group>"; };
+		EC2C9FAA22D03697006DF213 /* ZIKTNoteListViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTNoteListViewPresenter.m; sourceTree = "<group>"; };
+		EC2C9FAB22D03697006DF213 /* ZIKTNoteListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTNoteListWireframe.m; sourceTree = "<group>"; };
+		EC2C9FAC22D03697006DF213 /* ZIKTNoteListViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListViewEventHandler.h; sourceTree = "<group>"; };
+		EC2C9FAD22D03697006DF213 /* ZIKTNoteListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListInteractor.h; sourceTree = "<group>"; };
+		EC2C9FAE22D03697006DF213 /* ZIKTNoteListRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteListRouter.h; sourceTree = "<group>"; };
+		EC2C9FB122D03697006DF213 /* ZIKTTextWidgetViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextWidgetViewPresenter.h; sourceTree = "<group>"; };
+		EC2C9FB222D03697006DF213 /* ZIKTTextWidgetInteractorDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextWidgetInteractorDataSource.h; sourceTree = "<group>"; };
+		EC2C9FB322D03697006DF213 /* ZIKTTextViewBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextViewBuilder.h; sourceTree = "<group>"; };
+		EC2C9FB422D03697006DF213 /* ZIKTTextWidgetInteractorEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextWidgetInteractorEventHandler.h; sourceTree = "<group>"; };
+		EC2C9FB522D03697006DF213 /* ZIKTTextWidgetInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextWidgetInteractorInput.h; sourceTree = "<group>"; };
+		EC2C9FB622D03697006DF213 /* ZIKTTextViewWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextViewWireframe.h; sourceTree = "<group>"; };
+		EC2C9FB722D03697006DF213 /* ZIKTTextWidgetViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextWidgetViewProtocol.h; sourceTree = "<group>"; };
+		EC2C9FB822D03697006DF213 /* ZIKTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTTextView.m; sourceTree = "<group>"; };
+		EC2C9FB922D03697006DF213 /* ZIKTTextWidgetInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextWidgetInteractor.h; sourceTree = "<group>"; };
+		EC2C9FBA22D03697006DF213 /* ZIKTTextWidgetViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextWidgetViewEventHandler.h; sourceTree = "<group>"; };
+		EC2C9FBB22D03697006DF213 /* ZIKTTextWidgetViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTTextWidgetViewPresenter.m; sourceTree = "<group>"; };
+		EC2C9FBC22D03697006DF213 /* ZIKTTextViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextViewDataSource.h; sourceTree = "<group>"; };
+		EC2C9FBD22D03697006DF213 /* ZIKTTextViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTTextViewBuilder.m; sourceTree = "<group>"; };
+		EC2C9FBE22D03697006DF213 /* ZIKTTextWidgetInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTTextWidgetInteractor.m; sourceTree = "<group>"; };
+		EC2C9FBF22D03697006DF213 /* ZIKTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTTextView.h; sourceTree = "<group>"; };
+		EC2C9FC022D03697006DF213 /* ZIKTTextViewWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTTextViewWireframe.m; sourceTree = "<group>"; };
+		EC2C9FC222D03697006DF213 /* ZIKTEditorViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTEditorViewPresenter.m; sourceTree = "<group>"; };
+		EC2C9FC322D03697006DF213 /* ZIKTEditorWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTEditorWireframe.m; sourceTree = "<group>"; };
+		EC2C9FC422D03697006DF213 /* ZIKTEditorInteractorEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorInteractorEventHandler.h; sourceTree = "<group>"; };
+		EC2C9FC522D03697006DF213 /* ZIKTEditorBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTEditorBuilder.m; sourceTree = "<group>"; };
+		EC2C9FC622D03697006DF213 /* ZIKTEditorViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorViewEventHandler.h; sourceTree = "<group>"; };
+		EC2C9FC722D03697006DF213 /* ZIKTEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTEditorViewController.m; sourceTree = "<group>"; };
+		EC2C9FC822D03697006DF213 /* ZIKTEditorInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorInteractor.h; sourceTree = "<group>"; };
+		EC2C9FC922D03697006DF213 /* ZIKTEditorInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorInteractorInput.h; sourceTree = "<group>"; };
+		EC2C9FCA22D03697006DF213 /* ZIKTEditorViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorViewPresenter.h; sourceTree = "<group>"; };
+		EC2C9FCB22D03697006DF213 /* ZIKTEditorWireframeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorWireframeInput.h; sourceTree = "<group>"; };
+		EC2C9FCC22D03697006DF213 /* ZIKTEditorBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorBuilder.h; sourceTree = "<group>"; };
+		EC2C9FCD22D03697006DF213 /* ZIKTEditorWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorWireframe.h; sourceTree = "<group>"; };
+		EC2C9FCE22D03697006DF213 /* ZIKTEditorViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorViewProtocol.h; sourceTree = "<group>"; };
+		EC2C9FCF22D03697006DF213 /* ZIKTEditorViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorViewDataSource.h; sourceTree = "<group>"; };
+		EC2C9FD022D03697006DF213 /* ZIKTEditorInteractorDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorInteractorDataSource.h; sourceTree = "<group>"; };
+		EC2C9FD122D03697006DF213 /* ZIKTEditorInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTEditorInteractor.m; sourceTree = "<group>"; };
+		EC2C9FD222D03697006DF213 /* ZIKTEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorDelegate.h; sourceTree = "<group>"; };
+		EC2C9FD322D03697006DF213 /* ZIKTEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTEditorViewController.h; sourceTree = "<group>"; };
+		EC2C9FD622D03698006DF213 /* ZIKTNoteDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTNoteDataManager.h; sourceTree = "<group>"; };
+		EC2C9FD722D03698006DF213 /* ZIKTNoteDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTNoteDataManager.m; sourceTree = "<group>"; };
+		EC2C9FD922D03698006DF213 /* ZIKTRouter+ZIKTLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZIKTRouter+ZIKTLogin.m"; sourceTree = "<group>"; };
+		EC2C9FDA22D03698006DF213 /* UIApplication+ZIKTViperRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZIKTViperRouter.m"; sourceTree = "<group>"; };
+		EC2C9FDB22D03698006DF213 /* ZIKTRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIKTRouter.m; sourceTree = "<group>"; };
+		EC2C9FDC22D03698006DF213 /* ZIKTRouter+ZIKTEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZIKTRouter+ZIKTEditor.h"; sourceTree = "<group>"; };
+		EC2C9FDD22D03698006DF213 /* ZIKTRouter+ZIKTLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZIKTRouter+ZIKTLogin.h"; sourceTree = "<group>"; };
+		EC2C9FDE22D03698006DF213 /* UIApplication+ZIKTViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ZIKTViperRouter.h"; sourceTree = "<group>"; };
+		EC2C9FDF22D03698006DF213 /* ZIKTRouter+ZIKTEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZIKTRouter+ZIKTEditor.m"; sourceTree = "<group>"; };
+		EC2C9FE022D03698006DF213 /* ZIKTRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIKTRouter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC2C9F3822D03577006DF213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2C9F5022D0357A006DF213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2C9F5B22D0357A006DF213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC2C9F3222D03577006DF213 = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F3D22D03577006DF213 /* ZIKViperDemo */,
+				EC2C9F5622D0357A006DF213 /* ZIKViperDemoTests */,
+				EC2C9F6122D0357A006DF213 /* ZIKViperDemoUITests */,
+				EC2C9F3C22D03577006DF213 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC2C9F3C22D03577006DF213 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F3B22D03577006DF213 /* ZIKViperDemo.app */,
+				EC2C9F5322D0357A006DF213 /* ZIKViperDemoTests.xctest */,
+				EC2C9F5E22D0357A006DF213 /* ZIKViperDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC2C9F3D22D03577006DF213 /* ZIKViperDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9FAF22D03697006DF213 /* EditorModule */,
+				EC2C9F8222D03697006DF213 /* LoginModule */,
+				EC2C9F9C22D03697006DF213 /* NoteListModule */,
+				EC2C9F9922D03697006DF213 /* NoteModel */,
+				EC2C9FD422D03698006DF213 /* NoteService */,
+				EC2C9FD822D03698006DF213 /* Router */,
+				EC2C9F7022D035E9006DF213 /* ZIKViper */,
+				EC2C9F3E22D03577006DF213 /* AppDelegate.h */,
+				EC2C9F3F22D03577006DF213 /* AppDelegate.m */,
+				EC2C9F4122D03577006DF213 /* ViewController.h */,
+				EC2C9F4222D03578006DF213 /* ViewController.m */,
+				EC2C9F4422D03578006DF213 /* Main.storyboard */,
+				EC2C9F4722D0357A006DF213 /* Assets.xcassets */,
+				EC2C9F4922D0357A006DF213 /* LaunchScreen.storyboard */,
+				EC2C9F4C22D0357A006DF213 /* Info.plist */,
+				EC2C9F4D22D0357A006DF213 /* main.m */,
+			);
+			path = ZIKViperDemo;
+			sourceTree = "<group>";
+		};
+		EC2C9F5622D0357A006DF213 /* ZIKViperDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F5722D0357A006DF213 /* ZIKViperDemoTests.m */,
+				EC2C9F5922D0357A006DF213 /* Info.plist */,
+			);
+			path = ZIKViperDemoTests;
+			sourceTree = "<group>";
+		};
+		EC2C9F6122D0357A006DF213 /* ZIKViperDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F6222D0357A006DF213 /* ZIKViperDemoUITests.m */,
+				EC2C9F6422D0357A006DF213 /* Info.plist */,
+			);
+			path = ZIKViperDemoUITests;
+			sourceTree = "<group>";
+		};
+		EC2C9F7022D035E9006DF213 /* ZIKViper */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F7122D035E9006DF213 /* ZIKTViperWireframe.h */,
+				EC2C9F7222D035E9006DF213 /* ZIKTViperView.h */,
+				EC2C9F7322D035E9006DF213 /* NSObject+ZIKTViperAssembly.m */,
+				EC2C9F7422D035E9006DF213 /* UIViewController+ZIKTViperRouter.m */,
+				EC2C9F7522D035E9006DF213 /* ZIKTViperPresenter.h */,
+				EC2C9F7622D035E9006DF213 /* ZIKTViperViewEventHandler.h */,
+				EC2C9F7722D035E9006DF213 /* ZIKTViperInteractorPrivate.h */,
+				EC2C9F7822D035E9006DF213 /* NSObject+ZIKTViperAssembly.h */,
+				EC2C9F7922D035E9006DF213 /* ZIKTViperRouter.h */,
+				EC2C9F7A22D035E9006DF213 /* ZIKTViperInteractor.h */,
+				EC2C9F7B22D035E9006DF213 /* ZIKTViper.h */,
+				EC2C9F7C22D035E9006DF213 /* ZIKTViperWireframePrivate.h */,
+				EC2C9F7D22D035E9006DF213 /* ZIKTViperPresenterPrivate.h */,
+				EC2C9F7E22D035E9006DF213 /* UIViewController+ZIKTViperRouter.h */,
+				EC2C9F7F22D035E9006DF213 /* ZIKTViperViewPrivate.h */,
+			);
+			path = ZIKViper;
+			sourceTree = "<group>";
+		};
+		EC2C9F8222D03697006DF213 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F8322D03697006DF213 /* LoginService */,
+				EC2C9F8622D03697006DF213 /* UserModel */,
+				EC2C9F8922D03697006DF213 /* LoginViper */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		EC2C9F8322D03697006DF213 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F8422D03697006DF213 /* ZIKTLoginService.h */,
+				EC2C9F8522D03697006DF213 /* ZIKTLoginService.m */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		EC2C9F8622D03697006DF213 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F8722D03697006DF213 /* ZIKTUserModel.h */,
+				EC2C9F8822D03697006DF213 /* ZIKTUserModel.m */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		EC2C9F8922D03697006DF213 /* LoginViper */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F8A22D03697006DF213 /* ZIKTLoginViewDelegate.h */,
+				EC2C9F8B22D03697006DF213 /* ZIKTLoginViewProtocol.h */,
+				EC2C9F8C22D03697006DF213 /* ZIKTLoginViewWireframe.m */,
+				EC2C9F8D22D03697006DF213 /* ZIKTLoginBuilder.m */,
+				EC2C9F8E22D03697006DF213 /* ZIKTLoginViewController.h */,
+				EC2C9F8F22D03697006DF213 /* ZIKTLoginInteractorInput.h */,
+				EC2C9F9022D03697006DF213 /* ZIKTLoginInteractor.h */,
+				EC2C9F9122D03697006DF213 /* ZIKTLoginViewPresenter.m */,
+				EC2C9F9222D03697006DF213 /* ZIKTLoginViewWireframeInput.h */,
+				EC2C9F9322D03697006DF213 /* ZIKTLoginViewEventHandler.h */,
+				EC2C9F9422D03697006DF213 /* ZIKTLoginViewController.m */,
+				EC2C9F9522D03697006DF213 /* ZIKTLoginBuilder.h */,
+				EC2C9F9622D03697006DF213 /* ZIKTLoginViewWireframe.h */,
+				EC2C9F9722D03697006DF213 /* ZIKTLoginViewPresenter.h */,
+				EC2C9F9822D03697006DF213 /* ZIKTLoginInteractor.m */,
+			);
+			path = LoginViper;
+			sourceTree = "<group>";
+		};
+		EC2C9F9922D03697006DF213 /* NoteModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F9A22D03697006DF213 /* ZIKTNoteModel.h */,
+				EC2C9F9B22D03697006DF213 /* ZIKTNoteModel.m */,
+			);
+			path = NoteModel;
+			sourceTree = "<group>";
+		};
+		EC2C9F9C22D03697006DF213 /* NoteListModule */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F9D22D03697006DF213 /* NoteListViper */,
+			);
+			path = NoteListModule;
+			sourceTree = "<group>";
+		};
+		EC2C9F9D22D03697006DF213 /* NoteListViper */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9F9E22D03697006DF213 /* ZIKTNoteListViewController.m */,
+				EC2C9F9F22D03697006DF213 /* ZIKTNoteListModuleBuilder.h */,
+				EC2C9FA022D03697006DF213 /* ZIKTNoteListInteractorInput.h */,
+				EC2C9FA122D03697006DF213 /* ZIKTNoteListViewProtocol.h */,
+				EC2C9FA222D03697006DF213 /* ZIKTNoteListViewPresenter.h */,
+				EC2C9FA322D03697006DF213 /* ZIKTNoteListInteractor.m */,
+				EC2C9FA422D03697006DF213 /* ZIKTNoteListWireframe.h */,
+				EC2C9FA522D03697006DF213 /* ZIKTNoteListModuleBuilder.m */,
+				EC2C9FA622D03697006DF213 /* ZIKTNoteListViewController.h */,
+				EC2C9FA722D03697006DF213 /* ZIKTNoteListViewDataSource.h */,
+				EC2C9FA822D03697006DF213 /* ZIKTNoteListWireframeInput.h */,
+				EC2C9FA922D03697006DF213 /* ZIKTNoteListDataService.h */,
+				EC2C9FAA22D03697006DF213 /* ZIKTNoteListViewPresenter.m */,
+				EC2C9FAB22D03697006DF213 /* ZIKTNoteListWireframe.m */,
+				EC2C9FAC22D03697006DF213 /* ZIKTNoteListViewEventHandler.h */,
+				EC2C9FAD22D03697006DF213 /* ZIKTNoteListInteractor.h */,
+				EC2C9FAE22D03697006DF213 /* ZIKTNoteListRouter.h */,
+			);
+			path = NoteListViper;
+			sourceTree = "<group>";
+		};
+		EC2C9FAF22D03697006DF213 /* EditorModule */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9FB022D03697006DF213 /* TextWidgetViper */,
+				EC2C9FC122D03697006DF213 /* EditorViper */,
+			);
+			path = EditorModule;
+			sourceTree = "<group>";
+		};
+		EC2C9FB022D03697006DF213 /* TextWidgetViper */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9FB122D03697006DF213 /* ZIKTTextWidgetViewPresenter.h */,
+				EC2C9FB222D03697006DF213 /* ZIKTTextWidgetInteractorDataSource.h */,
+				EC2C9FB322D03697006DF213 /* ZIKTTextViewBuilder.h */,
+				EC2C9FB422D03697006DF213 /* ZIKTTextWidgetInteractorEventHandler.h */,
+				EC2C9FB522D03697006DF213 /* ZIKTTextWidgetInteractorInput.h */,
+				EC2C9FB622D03697006DF213 /* ZIKTTextViewWireframe.h */,
+				EC2C9FB722D03697006DF213 /* ZIKTTextWidgetViewProtocol.h */,
+				EC2C9FB822D03697006DF213 /* ZIKTTextView.m */,
+				EC2C9FB922D03697006DF213 /* ZIKTTextWidgetInteractor.h */,
+				EC2C9FBA22D03697006DF213 /* ZIKTTextWidgetViewEventHandler.h */,
+				EC2C9FBB22D03697006DF213 /* ZIKTTextWidgetViewPresenter.m */,
+				EC2C9FBC22D03697006DF213 /* ZIKTTextViewDataSource.h */,
+				EC2C9FBD22D03697006DF213 /* ZIKTTextViewBuilder.m */,
+				EC2C9FBE22D03697006DF213 /* ZIKTTextWidgetInteractor.m */,
+				EC2C9FBF22D03697006DF213 /* ZIKTTextView.h */,
+				EC2C9FC022D03697006DF213 /* ZIKTTextViewWireframe.m */,
+			);
+			path = TextWidgetViper;
+			sourceTree = "<group>";
+		};
+		EC2C9FC122D03697006DF213 /* EditorViper */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9FC222D03697006DF213 /* ZIKTEditorViewPresenter.m */,
+				EC2C9FC322D03697006DF213 /* ZIKTEditorWireframe.m */,
+				EC2C9FC422D03697006DF213 /* ZIKTEditorInteractorEventHandler.h */,
+				EC2C9FC522D03697006DF213 /* ZIKTEditorBuilder.m */,
+				EC2C9FC622D03697006DF213 /* ZIKTEditorViewEventHandler.h */,
+				EC2C9FC722D03697006DF213 /* ZIKTEditorViewController.m */,
+				EC2C9FC822D03697006DF213 /* ZIKTEditorInteractor.h */,
+				EC2C9FC922D03697006DF213 /* ZIKTEditorInteractorInput.h */,
+				EC2C9FCA22D03697006DF213 /* ZIKTEditorViewPresenter.h */,
+				EC2C9FCB22D03697006DF213 /* ZIKTEditorWireframeInput.h */,
+				EC2C9FCC22D03697006DF213 /* ZIKTEditorBuilder.h */,
+				EC2C9FCD22D03697006DF213 /* ZIKTEditorWireframe.h */,
+				EC2C9FCE22D03697006DF213 /* ZIKTEditorViewProtocol.h */,
+				EC2C9FCF22D03697006DF213 /* ZIKTEditorViewDataSource.h */,
+				EC2C9FD022D03697006DF213 /* ZIKTEditorInteractorDataSource.h */,
+				EC2C9FD122D03697006DF213 /* ZIKTEditorInteractor.m */,
+				EC2C9FD222D03697006DF213 /* ZIKTEditorDelegate.h */,
+				EC2C9FD322D03697006DF213 /* ZIKTEditorViewController.h */,
+			);
+			path = EditorViper;
+			sourceTree = "<group>";
+		};
+		EC2C9FD422D03698006DF213 /* NoteService */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9FD522D03698006DF213 /* NoteDataManager */,
+			);
+			path = NoteService;
+			sourceTree = "<group>";
+		};
+		EC2C9FD522D03698006DF213 /* NoteDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9FD622D03698006DF213 /* ZIKTNoteDataManager.h */,
+				EC2C9FD722D03698006DF213 /* ZIKTNoteDataManager.m */,
+			);
+			path = NoteDataManager;
+			sourceTree = "<group>";
+		};
+		EC2C9FD822D03698006DF213 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C9FD922D03698006DF213 /* ZIKTRouter+ZIKTLogin.m */,
+				EC2C9FDA22D03698006DF213 /* UIApplication+ZIKTViperRouter.m */,
+				EC2C9FDB22D03698006DF213 /* ZIKTRouter.m */,
+				EC2C9FDC22D03698006DF213 /* ZIKTRouter+ZIKTEditor.h */,
+				EC2C9FDD22D03698006DF213 /* ZIKTRouter+ZIKTLogin.h */,
+				EC2C9FDE22D03698006DF213 /* UIApplication+ZIKTViperRouter.h */,
+				EC2C9FDF22D03698006DF213 /* ZIKTRouter+ZIKTEditor.m */,
+				EC2C9FE022D03698006DF213 /* ZIKTRouter.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC2C9F3A22D03577006DF213 /* ZIKViperDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2C9F6722D0357A006DF213 /* Build configuration list for PBXNativeTarget "ZIKViperDemo" */;
+			buildPhases = (
+				EC2C9F3722D03577006DF213 /* Sources */,
+				EC2C9F3822D03577006DF213 /* Frameworks */,
+				EC2C9F3922D03577006DF213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZIKViperDemo;
+			productName = ZIKViperDemo;
+			productReference = EC2C9F3B22D03577006DF213 /* ZIKViperDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC2C9F5222D0357A006DF213 /* ZIKViperDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2C9F6A22D0357A006DF213 /* Build configuration list for PBXNativeTarget "ZIKViperDemoTests" */;
+			buildPhases = (
+				EC2C9F4F22D0357A006DF213 /* Sources */,
+				EC2C9F5022D0357A006DF213 /* Frameworks */,
+				EC2C9F5122D0357A006DF213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2C9F5522D0357A006DF213 /* PBXTargetDependency */,
+			);
+			name = ZIKViperDemoTests;
+			productName = ZIKViperDemoTests;
+			productReference = EC2C9F5322D0357A006DF213 /* ZIKViperDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC2C9F5D22D0357A006DF213 /* ZIKViperDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2C9F6D22D0357A006DF213 /* Build configuration list for PBXNativeTarget "ZIKViperDemoUITests" */;
+			buildPhases = (
+				EC2C9F5A22D0357A006DF213 /* Sources */,
+				EC2C9F5B22D0357A006DF213 /* Frameworks */,
+				EC2C9F5C22D0357A006DF213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2C9F6022D0357A006DF213 /* PBXTargetDependency */,
+			);
+			name = ZIKViperDemoUITests;
+			productName = ZIKViperDemoUITests;
+			productReference = EC2C9F5E22D0357A006DF213 /* ZIKViperDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC2C9F3322D03577006DF213 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = huangjianwu;
+				TargetAttributes = {
+					EC2C9F3A22D03577006DF213 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					EC2C9F5222D0357A006DF213 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = EC2C9F3A22D03577006DF213;
+					};
+					EC2C9F5D22D0357A006DF213 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = EC2C9F3A22D03577006DF213;
+					};
+				};
+			};
+			buildConfigurationList = EC2C9F3622D03577006DF213 /* Build configuration list for PBXProject "ZIKViperDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC2C9F3222D03577006DF213;
+			productRefGroup = EC2C9F3C22D03577006DF213 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC2C9F3A22D03577006DF213 /* ZIKViperDemo */,
+				EC2C9F5222D0357A006DF213 /* ZIKViperDemoTests */,
+				EC2C9F5D22D0357A006DF213 /* ZIKViperDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC2C9F3922D03577006DF213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2C9F4B22D0357A006DF213 /* LaunchScreen.storyboard in Resources */,
+				EC2C9F4822D0357A006DF213 /* Assets.xcassets in Resources */,
+				EC2C9F4622D03578006DF213 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2C9F5122D0357A006DF213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2C9F5C22D0357A006DF213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC2C9F3722D03577006DF213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2C9FF922D03698006DF213 /* ZIKTRouter+ZIKTLogin.m in Sources */,
+				EC2C9F4322D03578006DF213 /* ViewController.m in Sources */,
+				EC2C9FE622D03698006DF213 /* ZIKTLoginViewController.m in Sources */,
+				EC2C9FF022D03698006DF213 /* ZIKTTextViewBuilder.m in Sources */,
+				EC2C9FEA22D03698006DF213 /* ZIKTNoteListInteractor.m in Sources */,
+				EC2C9FE922D03698006DF213 /* ZIKTNoteListViewController.m in Sources */,
+				EC2C9FF222D03698006DF213 /* ZIKTTextViewWireframe.m in Sources */,
+				EC2C9FF122D03698006DF213 /* ZIKTTextWidgetInteractor.m in Sources */,
+				EC2C9FE122D03698006DF213 /* ZIKTLoginService.m in Sources */,
+				EC2C9FF522D03698006DF213 /* ZIKTEditorBuilder.m in Sources */,
+				EC2C9FFB22D03698006DF213 /* ZIKTRouter.m in Sources */,
+				EC2C9FF722D03698006DF213 /* ZIKTEditorInteractor.m in Sources */,
+				EC2C9FF622D03698006DF213 /* ZIKTEditorViewController.m in Sources */,
+				EC2C9FF422D03698006DF213 /* ZIKTEditorWireframe.m in Sources */,
+				EC2C9F4E22D0357A006DF213 /* main.m in Sources */,
+				EC2C9FE322D03698006DF213 /* ZIKTLoginViewWireframe.m in Sources */,
+				EC2C9FFA22D03698006DF213 /* UIApplication+ZIKTViperRouter.m in Sources */,
+				EC2C9FEB22D03698006DF213 /* ZIKTNoteListModuleBuilder.m in Sources */,
+				EC2C9FE222D03698006DF213 /* ZIKTUserModel.m in Sources */,
+				EC2C9F8122D035E9006DF213 /* UIViewController+ZIKTViperRouter.m in Sources */,
+				EC2C9F8022D035E9006DF213 /* NSObject+ZIKTViperAssembly.m in Sources */,
+				EC2C9F4022D03577006DF213 /* AppDelegate.m in Sources */,
+				EC2C9FE422D03698006DF213 /* ZIKTLoginBuilder.m in Sources */,
+				EC2C9FF322D03698006DF213 /* ZIKTEditorViewPresenter.m in Sources */,
+				EC2C9FF822D03698006DF213 /* ZIKTNoteDataManager.m in Sources */,
+				EC2C9FE722D03698006DF213 /* ZIKTLoginInteractor.m in Sources */,
+				EC2C9FEF22D03698006DF213 /* ZIKTTextWidgetViewPresenter.m in Sources */,
+				EC2C9FEC22D03698006DF213 /* ZIKTNoteListViewPresenter.m in Sources */,
+				EC2C9FE522D03698006DF213 /* ZIKTLoginViewPresenter.m in Sources */,
+				EC2C9FFC22D03698006DF213 /* ZIKTRouter+ZIKTEditor.m in Sources */,
+				EC2C9FED22D03698006DF213 /* ZIKTNoteListWireframe.m in Sources */,
+				EC2C9FE822D03698006DF213 /* ZIKTNoteModel.m in Sources */,
+				EC2C9FEE22D03698006DF213 /* ZIKTTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2C9F4F22D0357A006DF213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2C9F5822D0357A006DF213 /* ZIKViperDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2C9F5A22D0357A006DF213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2C9F6322D0357A006DF213 /* ZIKViperDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC2C9F5522D0357A006DF213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC2C9F3A22D03577006DF213 /* ZIKViperDemo */;
+			targetProxy = EC2C9F5422D0357A006DF213 /* PBXContainerItemProxy */;
+		};
+		EC2C9F6022D0357A006DF213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC2C9F3A22D03577006DF213 /* ZIKViperDemo */;
+			targetProxy = EC2C9F5F22D0357A006DF213 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC2C9F4422D03578006DF213 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2C9F4522D03578006DF213 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC2C9F4922D0357A006DF213 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2C9F4A22D0357A006DF213 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC2C9F6522D0357A006DF213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC2C9F6622D0357A006DF213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC2C9F6822D0357A006DF213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZIKViperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.ZIKViperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC2C9F6922D0357A006DF213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZIKViperDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.ZIKViperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC2C9F6B22D0357A006DF213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZIKViperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.ZIKViperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZIKViperDemo.app/ZIKViperDemo";
+			};
+			name = Debug;
+		};
+		EC2C9F6C22D0357A006DF213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZIKViperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.ZIKViperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZIKViperDemo.app/ZIKViperDemo";
+			};
+			name = Release;
+		};
+		EC2C9F6E22D0357A006DF213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZIKViperDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.ZIKViperDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZIKViperDemo;
+			};
+			name = Debug;
+		};
+		EC2C9F6F22D0357A006DF213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZIKViperDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.ZIKViperDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZIKViperDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC2C9F3622D03577006DF213 /* Build configuration list for PBXProject "ZIKViperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2C9F6522D0357A006DF213 /* Debug */,
+				EC2C9F6622D0357A006DF213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2C9F6722D0357A006DF213 /* Build configuration list for PBXNativeTarget "ZIKViperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2C9F6822D0357A006DF213 /* Debug */,
+				EC2C9F6922D0357A006DF213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2C9F6A22D0357A006DF213 /* Build configuration list for PBXNativeTarget "ZIKViperDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2C9F6B22D0357A006DF213 /* Debug */,
+				EC2C9F6C22D0357A006DF213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2C9F6D22D0357A006DF213 /* Build configuration list for PBXNativeTarget "ZIKViperDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2C9F6E22D0357A006DF213 /* Debug */,
+				EC2C9F6F22D0357A006DF213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC2C9F3322D03577006DF213 /* Project object */;
+}
