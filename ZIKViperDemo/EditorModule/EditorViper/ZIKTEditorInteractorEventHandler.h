@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ ZIKTEditorInteractorEventHandler is ZIKTEditorInteractor placeholder
+ */
 @protocol ZIKTEditorInteractorEventHandler <NSObject>
 
 @end

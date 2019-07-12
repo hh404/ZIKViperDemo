@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol ZIKTEditorInteractorEventHandler;
 @interface ZIKTEditorInteractor : NSObject <ZIKTViperInteractor, ZIKTEditorInteractorInput>
 @property (nonatomic, weak) id<ZIKTEditorInteractorDataSource> dataSource;
-@property (nonatomic, weak) id<ZIKTEditorInteractorEventHandler> eventHandler;
+@property (nonatomic, weak) id eventHandler;
+//@property (nonatomic, weak) id<ZIKTEditorInteractorEventHandler> eventHandler;
 
 - (instancetype)initWithEditingNote:(nullable ZIKTNoteModel *)note;
 

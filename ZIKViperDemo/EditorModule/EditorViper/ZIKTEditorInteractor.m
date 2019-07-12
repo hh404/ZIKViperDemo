@@ -13,7 +13,8 @@
 #import "ZIKTNoteModel.h"
 #import "ZIKTNoteDataManager.h"
 
-@interface ZIKTEditorInteractor () <ZIKTViperInteractorPrivate>
+//@interface ZIKTEditorInteractor () <ZIKTViperInteractorPrivate>
+@interface ZIKTEditorInteractor ()
 @property (nonatomic, strong, nullable) ZIKTNoteModel *currentEditingNote;
 @end
 

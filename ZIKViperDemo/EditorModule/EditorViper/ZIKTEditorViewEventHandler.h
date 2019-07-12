@@ -13,5 +13,5 @@
 @protocol ZIKTViperRouter;
 @protocol ZIKTEditorViewEventHandler <ZIKTViperViewEventHandler>
 - (void)didTouchNavigationBarDoneButton;
-- (id<ZIKTViperRouter>)router;
+- (id<ZIKTViperRouter>)router;//向下子View传递
 @end
