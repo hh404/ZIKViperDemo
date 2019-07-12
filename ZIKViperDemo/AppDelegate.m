@@ -17,7 +17,7 @@
 
 @implementation AppDelegate
 
-
+//comment
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     UIViewController *noteListViewController = [navigationController.viewControllers firstObject];
