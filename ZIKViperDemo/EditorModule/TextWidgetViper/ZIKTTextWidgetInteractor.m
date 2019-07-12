@@ -21,12 +21,12 @@
     return @"© This is ZIKTTextView.";
 }
 
-- (BOOL)needValidateAccount {
-    return self.loginedAccount == nil;
-}
+//- (BOOL)needValidateAccount {
+//    return self.loginedAccount == nil;
+//}
 
-- (void)didLoginedWithAccount:(NSString *)account {
-    self.loginedAccount = account;
-}
+//- (void)didLoginedWithAccount:(NSString *)account {
+//    self.loginedAccount = account;
+//}
 
 @end

@@ -18,7 +18,7 @@
 
 #import "ZIKTLoginViewProtocol.h"
 
-@interface ZIKTTextWidgetViewPresenter () <ZIKTViperPresenterPrivate,ZIKTTextWidgetInteractorDataSource,ZIKTTextWidgetInteractorEventHandler,ZIKTLoginViewDelegate>
+@interface ZIKTTextWidgetViewPresenter () <ZIKTViperPresenterPrivate,ZIKTTextWidgetInteractorDataSource,ZIKTTextWidgetInteractorEventHandler>
 @property (nonatomic, strong) id<ZIKTViperWireframe> wireframe;
 @property (nonatomic, weak) id<ZIKTViperView,ZIKTTextWidgetViewProtocol> view;
 @property (nonatomic, strong) id<ZIKTViperInteractor,ZIKTTextWidgetInteractorInput> interactor;
@@ -58,9 +58,9 @@
 
 #pragma mark ZIKTLoginViewDelegate
 
-- (void)loginViewController:(UIViewController *)loginViewController didLoginWithAccount:(NSString *)account {
-    [self.interactor didLoginedWithAccount:account];
-}
+//- (void)loginViewController:(UIViewController *)loginViewController didLoginWithAccount:(NSString *)account {
+//    [self.interactor didLoginedWithAccount:account];
+//}
 
 #pragma mark ZIKTTextWidgetInteractorDataSource
 

@@ -10,6 +10,6 @@
 
 @protocol ZIKTTextWidgetInteractorInput <NSObject>
 - (NSString *)copyrightDescription;
-- (BOOL)needValidateAccount;
-- (void)didLoginedWithAccount:(NSString *)account;
+//- (BOOL)needValidateAccount;
+//- (void)didLoginedWithAccount:(NSString *)account;
 @end
